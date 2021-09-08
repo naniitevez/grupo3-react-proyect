@@ -40,6 +40,21 @@
     background: var(--white);
 }
 
+/*drop down*/
 #basic-nav-dropdown, #basic-navbar-nav a {
-    color: var(--black)
+    color: var(--black);
+}
+
+/* Icons */
+
+.icon-section__container {
+    display: flex;
+}
+
+.icon__container {
+    width: 60px;
+    height: 60px;
+    background: #BFBFBF;
+    margin-right: 10px;
+    border-radius: 50%;
 }
