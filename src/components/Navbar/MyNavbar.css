@@ -122,3 +122,10 @@ div .dropdown-item {
     margin-right: 35px;
   }
 }
+
+
+@media (max-width: 1919px) {
+    #cart-notification__container{
+        display: none;
+    }
+}

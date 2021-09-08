@@ -1,21 +1,19 @@
 import React from "react";
-import CartNotification from "../CartNotification/CartNotification";
 import Icon from "./Icon";
 
 const IconsSection = () => {
   return (
     <>
       <div className="icon-section__container">
-        <Icon>
+        <Icon isCart="false">
           <i className="icon fas fa-search"></i>
         </Icon>
-        <Icon>
+        <Icon isCart="false">
           <i className="icon fas fa-user"></i>
         </Icon>
-        <Icon>
+        <Icon isCart="true">
           <i className="icon fas fa-shopping-cart"></i>
         </Icon>
-        <CartNotification/>
       </div>
     </>
   );
