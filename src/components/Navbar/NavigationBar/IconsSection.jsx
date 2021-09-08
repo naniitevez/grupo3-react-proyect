@@ -1,4 +1,5 @@
 import React from "react";
+import CartNotification from "../CartNotification/CartNotification";
 import Icon from "./Icon";
 
 const IconsSection = () => {
@@ -14,6 +15,7 @@ const IconsSection = () => {
         <Icon>
           <i className="icon fas fa-shopping-cart"></i>
         </Icon>
+        <CartNotification/>
       </div>
     </>
   );
