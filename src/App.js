@@ -3,7 +3,7 @@ import MyNavbar from "./components/Navbar/MyNavbar";
 
 function App() {
   return (
-    <Container>
+    <Container fluid>
        <MyNavbar/>
     </Container>
   );
