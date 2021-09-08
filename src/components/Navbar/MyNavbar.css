@@ -3,7 +3,8 @@
 .notice {
     display: flex;
     justify-content: center;
-    background: var(--avocado-green);
+    align-items: center;
+    background: var(--white);
     width: 1280px;
     height: 50px;
 }
