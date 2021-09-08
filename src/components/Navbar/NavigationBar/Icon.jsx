@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Icon = () => {
+const Icon = ({children}) => {
     return (
         <div className="icon__container">
-            
+            {children}
         </div>
     )
 }

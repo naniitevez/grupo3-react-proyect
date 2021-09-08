@@ -1,4 +1,5 @@
 import { Navbar, Nav } from "react-bootstrap";
+import IconsSection from "./IconsSection";
 import MyDropDown from "./MyDropDown";
 
 const Menu = () => {
@@ -26,6 +27,7 @@ const Menu = () => {
         <Nav.Link href="#home">Our Brands</Nav.Link>
         <Nav.Link href="#link">About Us</Nav.Link>
       </Nav>
+      <IconsSection/>
     </Navbar.Collapse>
   );
 };
