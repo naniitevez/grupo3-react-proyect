@@ -1,10 +1,11 @@
+import { Container } from "react-bootstrap";
 import MyNavbar from "./components/Navbar/MyNavbar";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
        <MyNavbar/>
-    </div>
+    </Container>
   );
 }
 
