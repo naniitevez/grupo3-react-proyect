@@ -1,16 +1,13 @@
-import { Container, Row } from "react-bootstrap";
-import AlertNotice from "./AlertNotice";
 import './MyNavbar.css'
+import AlertNotice from "./AlertNotice";
 import NoticeSection from "./NoticeSection";
 
 const MyNavbar = () => {
   return (
-    <Container>
-      <Row>
+    <div id="navbar-row__container">
         <AlertNotice/>
         <NoticeSection/>
-      </Row>
-    </Container>
+    </div>
   );
 };
 

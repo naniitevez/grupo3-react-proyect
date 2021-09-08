@@ -1,14 +1,21 @@
 @import url('../../index.css');
 
+#navbar-row__container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Notice section */
 .notice {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--white);
+    background: green;
     width: 1280px;
     height: 50px;
 }
 
+/* Alert section */
 #alert-notice {
     position: absolute;
     z-index: 100;
