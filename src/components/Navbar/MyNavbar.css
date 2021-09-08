@@ -1,5 +1,9 @@
+@import url('../../index.css');
+
 .notice {
     display: flex;
     justify-content: center;
-    background: green;
+    background: var(--avocado-green);
+    width: 1280px;
+    height: 50px;
 }

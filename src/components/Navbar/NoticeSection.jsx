@@ -3,7 +3,7 @@ import React from 'react'
 const NoticeSection = () => {
     return (
         <div className="notice">
-            Hola mundo!
+            ENVIO GRATIS! A sucursal comprando $3500 y a domicilio desde $5400
         </div>
     )
 }

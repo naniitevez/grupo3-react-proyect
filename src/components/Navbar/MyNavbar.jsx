@@ -4,7 +4,7 @@ import NoticeSection from "./NoticeSection";
 
 const MyNavbar = () => {
   return (
-    <Container fluid>
+    <Container>
       <Row>
         <NoticeSection/>
       </Row>
