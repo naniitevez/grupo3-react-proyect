@@ -1,16 +1,17 @@
-import { Container, Row } from "react-bootstrap";
-import AlertNotice from "./AlertNotice";
-import './MyNavbar.css'
+import "./MyNavbar.css";
+// import AlertNotice from "./AlertNotice";
 import NoticeSection from "./NoticeSection";
+import NavigationBar from "./NavigationBar/NavigationBar";
 
 const MyNavbar = () => {
   return (
-    <Container>
-      <Row>
-        <AlertNotice/>
-        <NoticeSection/>
-      </Row>
-    </Container>
+    <>
+      <div id="navbar-row__container">
+        {/* <AlertNotice/> */}
+        <NoticeSection />
+      </div>
+      <NavigationBar/>
+    </>
   );
 };
 

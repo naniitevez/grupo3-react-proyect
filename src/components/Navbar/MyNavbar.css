@@ -1,5 +1,11 @@
 @import url('../../index.css');
 
+#navbar-row__container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Notice section */
 .notice {
     display: flex;
     justify-content: center;
@@ -7,8 +13,10 @@
     background: var(--white);
     width: 1280px;
     height: 50px;
+    border-bottom: groove;
 }
 
+/* Alert section */
 #alert-notice {
     position: absolute;
     z-index: 100;
@@ -24,4 +32,38 @@
 
 #to-close {
     padding: 1.2rem;
+}
+
+/*Navigation bar*/
+#navigationBar {
+    height: 100px;
+    background: var(--white);
+}
+
+/*drop down*/
+#basic-nav-dropdown, #basic-navbar-nav a {
+    color: var(--black);
+}
+
+/* Icons */
+
+.icon-section__container {
+    display: flex;
+}
+
+.icon__container {
+    width: 60px;
+    height: 60px;
+    background: var(--white);
+    margin-right: 10px;
+    border: 1px solid var(--details-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 23px;
+    color: var(--black);
 }
