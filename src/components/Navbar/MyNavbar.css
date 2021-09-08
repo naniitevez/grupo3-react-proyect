@@ -8,3 +8,20 @@
     width: 1280px;
     height: 50px;
 }
+
+#alert-notice {
+    position: absolute;
+    z-index: 100;
+    background: var(--avocado-green);
+    border-color: var(--avocado-green);
+    color: var(--black);
+    width: 1280px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#to-close {
+    padding: 1.2rem;
+}

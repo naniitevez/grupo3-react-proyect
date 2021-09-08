@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const NoticeSection = () => {
-    return (
-        <div className="notice">
-            Texto provisorio
-        </div>
-    )
-}
+  return (
+    <>
+      <div className="notice">Texto provisorio</div>
+    </>
+  );
+};
 
-export default NoticeSection
+export default NoticeSection;
