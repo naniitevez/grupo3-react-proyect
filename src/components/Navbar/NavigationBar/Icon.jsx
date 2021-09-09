@@ -2,22 +2,20 @@ import React from "react";
 import CartNotification from "../CartNotification/CartNotification";
 
 const Icon = ({ iconType }) => {
+  let iconClass = "icon fas "
 
+  if(iconType === "search") iconClass += `fa-${iconType}`
+  else if (iconType === "user") iconClass += `fa-${iconType}`
+  else iconClass += `fa-shopping-${iconType}`
+    
   return (
     <div className="icon__container">
-      <i className={`icon fas ${iconType}`}></i>
+      <i className={iconClass}></i>
       {
-          iconType === "fa-shopping-cart" && <CartNotification/>
+          iconType === "cart" && <CartNotification/>
       }
     </div>
   );
 };
 
 export default Icon;
-
-// {
-//     <div className="icon__container">
-//       {children}
-//       {isCart && <CartNotification />}
-//     </div>
-//   }

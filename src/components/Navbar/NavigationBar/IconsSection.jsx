@@ -5,9 +5,9 @@ const IconsSection = () => {
   return (
     <>
       <div className="icon-section__container">
-        <Icon iconType="fa-search"/>
-        <Icon iconType="fa-user"/>
-        <Icon iconType="fa-shopping-cart"/>
+        <Icon iconType="search"/>
+        <Icon iconType="user"/>
+        <Icon iconType="cart"/>
       </div>
     </>
   );
