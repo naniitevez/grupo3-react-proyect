@@ -12,24 +12,24 @@
   justify-content: center;
   align-items: center;
   /* background: var(--white); */
-  background: var(--avocado-green);
+  background: red;
   width: 1280px;
   height: 50px;
   border-bottom: 1px groove;
 }
 
 /* Alert section */
+
 #alert-notice {
   position: absolute;
   z-index: 100;
-  background: var(--avocado-green);
-  border-color: var(--avocado-green);
-  color: var(--black);
   width: 1280px;
   height: 50px;
+  color: var(--black);
+  background: var(--avocado-green);
+  border-color: var(--avocado-green);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #to-close {
@@ -46,18 +46,18 @@
 icon__container es el padre*/
 
 #cart-notification__container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 16px;
-    height: 16px;
-    background: var(--main-color);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 9px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--main-color);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 9px;
 }
 
 /*drop down*/
@@ -101,7 +101,13 @@ div .dropdown-item {
   color: var(--black);
 }
 
-/* Media queries */
+/* ------- Media queries ------- */
+
+@media (max-width: 1300px) {
+  #alert-notice {
+    width: 1000px;
+  }
+}
 
 @media (max-width: 1200px) {
   .icon-section__container {
@@ -124,8 +130,28 @@ div .dropdown-item {
   }
 }
 
-/* @media (max-width: 1919px) {
-    #cart-notification__container{
-        display: none;
-    }
-} */
+@media (max-width: 1000px) {
+  #alert-notice {
+    width: 800px;
+  }
+}
+
+@media (max-width: 992px) {
+  .icon-section__container {
+    display: none;
+  }
+  #basic-nav-dropdown, #basic-navbar-nav a {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #alert-notice {
+    width: 500px;
+  }
+  #basic-nav-dropdown, #basic-navbar-nav a {
+    font-size: 15px;
+  }
+}
