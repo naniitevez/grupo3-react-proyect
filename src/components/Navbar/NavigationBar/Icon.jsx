@@ -1,18 +1,23 @@
-import React from 'react'
-import CartNotification from '../CartNotification/CartNotification'
+import React from "react";
+import CartNotification from "../CartNotification/CartNotification";
 
-const Icon = ({children, isCart}) => {
+const Icon = ({ iconType }) => {
 
-    return (
-        <>
-        {
-            isCart && <CartNotification/>
-        }
-        <div className="icon__container">
-            {children}
-        </div>
-        </>
-    )
-}
+  return (
+    <div className="icon__container">
+      <i className={`icon fas ${iconType}`}></i>
+      {
+          iconType === "fa-shopping-cart" && <CartNotification/>
+      }
+    </div>
+  );
+};
 
-export default Icon
+export default Icon;
+
+// {
+//     <div className="icon__container">
+//       {children}
+//       {isCart && <CartNotification />}
+//     </div>
+//   }

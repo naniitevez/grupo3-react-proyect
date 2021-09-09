@@ -5,15 +5,9 @@ const IconsSection = () => {
   return (
     <>
       <div className="icon-section__container">
-        <Icon isCart="false">
-          <i className="icon fas fa-search"></i>
-        </Icon>
-        <Icon isCart="false">
-          <i className="icon fas fa-user"></i>
-        </Icon>
-        <Icon isCart="true">
-          <i className="icon fas fa-shopping-cart"></i>
-        </Icon>
+        <Icon iconType="fa-search"/>
+        <Icon iconType="fa-user"/>
+        <Icon iconType="fa-shopping-cart"/>
       </div>
     </>
   );

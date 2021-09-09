@@ -42,22 +42,22 @@
   background: var(--white);
 }
 
-/* Cart Notification */
+/* Cart Notification 
+icon__container es el padre*/
 
 #cart-notification__container {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 16px;
     height: 16px;
     background: var(--main-color);
-    border-radius: 50%;
-    position: absolute;
-    right: 365px;
-}
-
-.cart-notification {
+    color: var(--white);
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     font-size: 9px;
-    color: var(--white);
 }
 
 /*drop down*/
@@ -84,15 +84,16 @@ div .dropdown-item {
 }
 
 .icon__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   background: var(--white);
   margin-right: 10px;
   border: 1px solid var(--details-color);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon {
@@ -123,9 +124,8 @@ div .dropdown-item {
   }
 }
 
-
-@media (max-width: 1919px) {
+/* @media (max-width: 1919px) {
     #cart-notification__container{
         display: none;
     }
-}
+} */
