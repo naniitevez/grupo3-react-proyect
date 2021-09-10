@@ -28,6 +28,10 @@ const Menu = () => {
         <Nav.Link href="#link">About Us</Nav.Link>
       </Nav>
       <IconsSection/>
+      <Nav id="responsive-nav" className="me-auto">
+        <Nav.Link href="#user">User</Nav.Link>
+        <Nav.Link href="#cart">Cart</Nav.Link>
+      </Nav>
     </Navbar.Collapse>
   );
 };
