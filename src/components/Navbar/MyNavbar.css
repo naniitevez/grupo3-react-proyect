@@ -188,6 +188,9 @@ div .dropdown-item {
   #form-search__container {
     display: contents;
   }
+  .notice {
+    width: 600px;
+  }
 } 
 
 @media (max-width: 768px) {
@@ -199,5 +202,8 @@ div .dropdown-item {
   }
   #search-input {
     width: 13rem;
+  }
+  .notice {
+    width: 100%;
   }
 }
