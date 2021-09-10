@@ -11,8 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: var(--white); */
-  background: red;
+  background: var(--white);
   width: 1280px;
   height: 50px;
   border-bottom: 1px groove;
@@ -40,6 +39,39 @@
 #navigationBar {
   height: 100px;
   background: var(--white);
+}
+
+/* Form Search */
+#form-search__container {
+  display: none;
+}
+
+#search-input {
+  border-radius: 20px;
+  margin-right: 5px;
+  width: 20rem;
+}
+
+#search-input:focus {
+  border-color: var(--black);
+}
+
+#button-search {
+  border-radius: 20px;
+  width: 3rem;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+#button-search:focus {
+  box-shadow: none;
+}
+
+#button-search:active {
+  background-color: var(--main-color);
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
 }
 
 /* Cart Notification 
@@ -101,26 +133,31 @@ div .dropdown-item {
   color: var(--black);
 }
 
+#responsive-nav {
+    display: none;
+}
+
 /* ------- Media queries ------- */
 
 @media (max-width: 1300px) {
   #alert-notice {
     width: 1000px;
   }
+  .notice {
+    width: 900px;
+  }
+  .icon__container {
+    width: 45px;
+    height: 45px;
+  }
+  .icon {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1200px) {
   .icon-section__container {
-    margin-right: 20px;
-  }
-
-  .icon__container {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icon {
-    font-size: 15px;
+    margin-right: 15px;
   }
 
   #basic-nav-dropdown,
@@ -136,7 +173,7 @@ div .dropdown-item {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .icon-section__container {
     display: none;
   }
@@ -145,7 +182,13 @@ div .dropdown-item {
     margin-bottom: 5px;
     margin-left: 25px;
   }
-}
+  #responsive-nav {
+      display: contents;
+  }
+  #form-search__container {
+    display: contents;
+  }
+} 
 
 @media (max-width: 768px) {
   #alert-notice {
@@ -153,5 +196,8 @@ div .dropdown-item {
   }
   #basic-nav-dropdown, #basic-navbar-nav a {
     font-size: 15px;
+  }
+  #search-input {
+    width: 13rem;
   }
 }
