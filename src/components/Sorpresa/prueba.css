@@ -1,0 +1,22 @@
+/* seccion surprisse someone */
+
+.sorpresa_btn{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-style: solid;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.sorpresa_tit{
+    font-weight: 900;
+    color: #FF8126;
+}
+
+.sorpresa_subt{
+    font-weight: 600;
+    color:black;   
+}
