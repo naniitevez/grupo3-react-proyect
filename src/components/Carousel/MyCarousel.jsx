@@ -4,12 +4,18 @@ import Slider from "react-slick";
 import { SliderData } from "../../data/SliderData";
 import ImageCard from "./ImageCard";
 
+const estilos = {
+  width: 40,
+  height: 40,
+  position: "absolute",
+}
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "pink" }}
+      style={{ ...style, ...estilos, right: "-85px" }}
       onClick={onClick}
     />
   );
@@ -20,7 +26,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, ...estilos, left: "-85px" }}
       onClick={onClick}
     />
   );
@@ -28,7 +34,8 @@ function SamplePrevArrow(props) {
 
 const MyCarousel = () => {
   const settings = {
-    dots: true,
+    centerMode: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -39,16 +46,21 @@ const MyCarousel = () => {
     // pauseOnHover: true
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1760,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToShow: 4,
+          slidesToScroll: 4,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1180,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -56,7 +68,7 @@ const MyCarousel = () => {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 830,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -68,7 +80,7 @@ const MyCarousel = () => {
   };
   return (
     // <div >
-      <Slider {...settings} style={{width: "1280px"}}>
+      <Slider {...settings} style={{width: "60%"}}>
          {
            SliderData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
          }
