@@ -16,7 +16,6 @@ function App() {
   return (
     <Container fluid>
       <MyNavbar />
-
       <SorpresaContainer />
 
       <div>
