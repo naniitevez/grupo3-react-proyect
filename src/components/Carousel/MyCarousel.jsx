@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { SliderData } from "../../data/SliderData";
 import ImageCard from "./ImageCard";
 
-const estilos = {
+const arrowStyles = {
   width: 40,
   height: 40,
   position: "absolute",
@@ -15,9 +15,11 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, ...estilos, right: "-85px" }}
+      style={{ ...style, ...arrowStyles, right: "-85px" }}
       onClick={onClick}
-    />
+    >
+      <i class=" iconArrow fas fa-adjust"></i>
+    </div>
   );
 }
 
@@ -26,7 +28,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, ...estilos, left: "-85px" }}
+      style={{ ...style, ...arrowStyles, left: "-85px" }}
       onClick={onClick}
     />
   );
