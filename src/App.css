@@ -1,0 +1,7 @@
+.why-columns{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-columns: 100px;
+  
+  }

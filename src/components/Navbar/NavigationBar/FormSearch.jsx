@@ -11,7 +11,7 @@ const FormSearch = () => {
           className="mr-2"
           aria-label="Search"
         />
-        <Button id="button-search"><i class="fas fa-search"></i></Button>
+        <Button id="button-search"><i className="fas fa-search"></i></Button>
       </Form>
     </div>
   );
