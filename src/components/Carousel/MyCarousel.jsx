@@ -17,9 +17,7 @@ function SampleNextArrow(props) {
       className={className}
       style={{ ...style, ...arrowStyles, right: "-85px" }}
       onClick={onClick}
-    >
-      <i class=" iconArrow fas fa-adjust"></i>
-    </div>
+    />
   );
 }
 
