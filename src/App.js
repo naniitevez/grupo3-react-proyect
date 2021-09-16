@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import InstagramCarousel from "./components/Carousel/InstagramCarousel";
 import MyNavbar from "./components/Navbar/MyNavbar";
 import SorpresaContainer from "./components/Sorpresa/SorpresaContainer";
 import "./App.css";
@@ -14,6 +15,7 @@ import {
 
 function App() {
   return (
+
     <Container fluid>
       <MyNavbar />
       <SorpresaContainer />
@@ -48,6 +50,8 @@ function App() {
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
       </div>
+        <InstagramCarousel />
+
     </Container>
   );
 }
