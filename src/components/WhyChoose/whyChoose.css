@@ -1,0 +1,11 @@
+div p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 48 46px;
+    text-align: center;
+}
+
+span{
+    color: #FF8126;
+}
