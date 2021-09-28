@@ -38,7 +38,7 @@ const MyCarousel = () => {
 
   useEffect(() => {
     getCarouselData()
-  }, [carouselData])
+  }, [carouselData, getCarouselData])
 
 
   const settings = {
@@ -87,13 +87,11 @@ const MyCarousel = () => {
     prevArrow: <SamplePrevArrow />
   };
   return (
-    // <div >
       <Slider {...settings} style={{width: "60%"}}>
          {
            carouselData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
          }
       </Slider>
-    // </div>
   );
 };
 
