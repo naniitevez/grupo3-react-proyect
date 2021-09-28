@@ -1,8 +1,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { SliderData } from "../../data/SliderData";
 import ImageCard from "./ImageCard";
+import { useContext, useEffect } from "react";
+import { StoreContext } from "../../Context/StoreContext";
 
 const arrowStyles = {
   width: 40,
@@ -17,9 +18,7 @@ function SampleNextArrow(props) {
       className={className}
       style={{ ...style, ...arrowStyles, right: "-85px" }}
       onClick={onClick}
-    >
-      <i class=" iconArrow fas fa-adjust"></i>
-    </div>
+    />
   );
 }
 
@@ -35,13 +34,20 @@ function SamplePrevArrow(props) {
 }
 
 const MyCarousel = () => {
+  const {carouselData, getCarouselData} = useContext(StoreContext)
+
+  useEffect(() => {
+    getCarouselData()
+  }, [carouselData])
+
+
   const settings = {
     centerMode: true,
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 1,
     focusOnSelect: true,
     // autoplay: true,
     // autoplaySpeed: 1000,
@@ -84,7 +90,7 @@ const MyCarousel = () => {
     // <div >
       <Slider {...settings} style={{width: "60%"}}>
          {
-           SliderData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
+           carouselData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
          }
       </Slider>
     // </div>

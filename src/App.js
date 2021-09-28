@@ -12,6 +12,7 @@ import {
   faPalette,
   faHippo,
 } from "@fortawesome/free-solid-svg-icons";
+import StoreContextProvider from "./Context/StoreContext";
 
 function App() {
   return (
@@ -50,7 +51,10 @@ function App() {
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
       </div>
+
+      <StoreContextProvider>
         <InstagramCarousel />
+      </StoreContextProvider>
 
     </Container>
   );
