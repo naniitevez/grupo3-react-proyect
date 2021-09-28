@@ -1,8 +1,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { SliderData } from "../../data/SliderData";
 import ImageCard from "./ImageCard";
+import { useContext, useEffect } from "react";
+import { StoreContext } from "../../Context/StoreContext";
 
 const arrowStyles = {
   width: 40,
@@ -33,6 +34,13 @@ function SamplePrevArrow(props) {
 }
 
 const MyCarousel = () => {
+  const {carouselData, getCarouselData} = useContext(StoreContext)
+
+  useEffect(() => {
+    getCarouselData()
+  }, [carouselData])
+
+
   const settings = {
     centerMode: true,
     dots: false,
@@ -82,7 +90,7 @@ const MyCarousel = () => {
     // <div >
       <Slider {...settings} style={{width: "60%"}}>
          {
-           SliderData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
+           carouselData.map(obj => <ImageCard url={obj.url} description={obj.description} key={obj.id} />)
          }
       </Slider>
     // </div>
