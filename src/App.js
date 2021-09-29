@@ -27,7 +27,7 @@ function App() {
       <div className="why-columns">
         <WhyChooseText
           icon={faTshirt}
-          title="Descubra nuevos colores y formas"
+          title="Descubra nuevos colores"
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
         <WhyChooseText
