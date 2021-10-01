@@ -12,12 +12,14 @@ import {
   faPalette,
   faHippo,
 } from "@fortawesome/free-solid-svg-icons";
+import BannerPrincipal from "./components/BannerPrincipal/BannerPrincipal";
 
 function App() {
   return (
 
     <Container fluid>
       <MyNavbar />
+      <BannerPrincipal />
       <SorpresaContainer />
 
       <div>
