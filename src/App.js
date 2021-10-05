@@ -5,6 +5,8 @@ import SorpresaContainer from "./components/Sorpresa/SorpresaContainer";
 import "./App.css";
 import WhyChoose from "./components/WhyChoose/WhyChoose";
 import WhyChooseText from "./components/WhyChoose/WhyChooseText";
+import Footer from "./components/Footer/Footer";
+import Offers from "./components/Offers/Offers";
 import {
   faTshirt,
   faCoffee,
@@ -14,10 +16,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
+
   return (
 
     <Container fluid>
       <MyNavbar />
+      <Offers/>
       <SorpresaContainer />
 
       <div>
@@ -50,8 +54,8 @@ function App() {
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
       </div>
-        <InstagramCarousel />
-
+      <InstagramCarousel />
+      <Footer/>
     </Container>
   );
 }
