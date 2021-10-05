@@ -19,7 +19,7 @@ export class AddProduct extends Component{
 
     confirmation(){
         Swal.fire({
-            title: "Buen Trabajo!", 
+            title: "¡Buen trabajo!", 
             text: "El producto se agregó al carrito con éxito!",
             icon: "success",
             confirmButtonText: "Cerrar",
