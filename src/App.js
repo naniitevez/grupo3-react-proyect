@@ -14,6 +14,7 @@ import {
   faPalette,
   faHippo,
 } from "@fortawesome/free-solid-svg-icons";
+import StoreContextProvider from "./Context/StoreContext";
 
 function App() {
 
@@ -53,9 +54,12 @@ function App() {
           title="Toda la serie Animal Print"
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
-      </div>
+<div/>
       <InstagramCarousel />
       <Footer/>
+      <StoreContextProvider>
+        <InstagramCarousel />
+      </StoreContextProvider>
     </Container>
   );
 }
