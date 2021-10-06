@@ -1,0 +1,41 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.titulo {
+    color: coral;
+}
+
+.texto {
+    left: 100px;
+}
+
+.boton{
+    display: flex;
+    background-color: chocolate;
+    color:white;
+    border-style: solid;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    left: 200px;
+    width: 550px;
+    height: 350px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 30vh;
+    justify-content: space-between;
+}
+

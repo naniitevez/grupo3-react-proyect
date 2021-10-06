@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import InstagramCarousel from "./components/Carousel/InstagramCarousel";
 import MyNavbar from "./components/Navbar/MyNavbar";
+import WhoMakes from "./components/WhoMakes/WhoMakes";
 import SorpresaContainer from "./components/Sorpresa/SorpresaContainer";
 import "./App.css";
 import WhyChoose from "./components/WhyChoose/WhyChoose";
@@ -14,6 +15,7 @@ import {
   faPalette,
   faHippo,
 } from "@fortawesome/free-solid-svg-icons";
+import TellFriend from "./components/TellFriend/TellFriend";
 import StoreContextProvider from "./Context/StoreContext";
 
 function App() {
@@ -24,7 +26,8 @@ function App() {
       <MyNavbar />
       <Offers/>
       <SorpresaContainer />
-
+      <WhoMakes/>
+      <TellFriend/>
       <div>
         <WhyChoose />
       </div>
