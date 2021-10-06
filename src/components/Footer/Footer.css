@@ -1,0 +1,75 @@
+:root {
+    --main-color: #FF8126;
+    --secondary-color: #F7F5F0;
+    --berry-blue: #6090C3;
+    --avocado-green: #C2E8CE;
+    --black: #1F1F1F;
+    --white: #FFFFFF;
+    --details-color: #BFBFBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem 1rem;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 15%;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(102, 101, 101)
+}
+
+.links a:hover {
+    color: var(--main-color)
+}
+
+@media screen and (min-width: 370px) {
+    .offers-title {
+        font-size: 1.6rem;
+
+    }
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .offers-title {
+        font-size: 1.8rem;
+    }
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .offers-title {
+        font-size: 2rem;
+    }
+    :root {
+        font-size: 22px;
+    }
+}
