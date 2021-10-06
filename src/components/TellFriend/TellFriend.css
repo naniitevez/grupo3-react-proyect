@@ -1,0 +1,86 @@
+.tellTitulo{
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.tellFondo{
+    background-color: rgba(255, 101, 55, 0.685);
+    height: 200px;
+    width: 1fr;
+    color:white;
+}
+
+.redes{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content:space-evenly;
+}
+
+.inst{
+    display:flex;
+    flex-flow: nowrap;
+    background-color:
+    #FF8126;
+    font-size: 2rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100% ;
+    color: white;
+    align-items: center;
+}
+
+.tw{
+    display:flex;
+    flex-flow: nowrap;
+    background-color:
+    #FF8126;
+    font-size: 2rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100% ;
+    color: white;
+    align-items: center;
+}
+
+.face{
+    display:flex;
+    flex-flow: nowrap;
+    background-color:
+    #FF8126;
+    font-size: 2rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100% ;
+    color: white;
+    align-items: center;
+}
+
+.env{
+    display:flex;
+    flex-flow: nowrap;
+    background-color:
+    #FF8126;
+    font-size: 2rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100% ;
+    color: white;
+    align-items: center;
+}
+
+.at{
+    display:flex;
+    flex-flow: nowrap;
+    background-color:
+    #FF8126;
+    font-size: 2rem;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100% ;
+    color: white;
+    align-items: center;
+}
