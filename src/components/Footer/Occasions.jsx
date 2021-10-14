@@ -8,7 +8,10 @@ const Occasions = () => {
       <a href="#">Trabajar desde casa</a>
       <a href="#">Regalos</a>
       <a href="#">Música</a>
-      <a href="#">Todos los productos</a>
+      <a href="#">Productos</a>
+      <a href="#">Niños</a>
+      <a href="#">Mujer</a>
+      <a href="#">Hombre</a>
     </div>
   )
 }

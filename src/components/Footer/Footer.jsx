@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-img">
-        <img src="../../../public/img/t-shirt-boy.jpg" alt=""/>
+        <img src="remera2.jpg" alt=""/>
       </div>
 
       <Occasions/>

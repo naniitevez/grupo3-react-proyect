@@ -17,14 +17,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import TellFriend from "./components/TellFriend/TellFriend";
 import StoreContextProvider from "./Context/StoreContext";
+import { OffersContextProvider } from "./Context/OffersContext.jsx";
+
 
 function App() {
-
+  
   return (
 
     <Container fluid>
-      <MyNavbar />
-      <Offers/>
+
+        <MyNavbar />
+        <Offers/>
+
+      
+
       <SorpresaContainer />
       <WhoMakes/>
       <TellFriend/>
@@ -57,12 +63,12 @@ function App() {
           title="Toda la serie Animal Print"
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
-<div/>
-      <InstagramCarousel />
+      </div>
+      {/*<InstagramCarousel />*/}
       <Footer/>
-      <StoreContextProvider>
-        <InstagramCarousel />
-      </StoreContextProvider>
+      {/* <StoreContextProvider>
+      <InstagramCarousel />
+      </StoreContextProvider> */}
     </Container>
   );
 }
