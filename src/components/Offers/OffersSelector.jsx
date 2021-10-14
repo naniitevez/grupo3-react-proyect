@@ -22,7 +22,9 @@ const OffersSelector = (setCounter) => {
       <Modal active={active} toggle={toggle}>
         <h5 className="modal-title">Confirmar<span> Compra</span></h5> 
         <p>Confirmar para que el producto se añada al carrito de compras...</p>
-        <Button className="my-button" onClick={<AddProduct/>}>Agregar al Carrito</Button>
+        <Button className="my-button" onClick={
+          <AddProduct/>
+        }>Agregar al Carrito</Button>
       </Modal>
     </div>
   )

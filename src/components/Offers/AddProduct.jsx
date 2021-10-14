@@ -23,7 +23,7 @@ const AddProduct = (props) => {
                 <Button className="my-button" onClick={() => {
                    
                     confirmation(); 
-                    /*props.toggle();*/                
+                    /*props.toggle();*/              
                 }}
                 >Agregar al Carrito</Button>
             </div>
