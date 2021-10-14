@@ -20,17 +20,14 @@ import StoreContextProvider from "./Context/StoreContext";
 import { OffersContextProvider } from "./Context/OffersContext.jsx";
 
 
+
 function App() {
   
   return (
 
     <Container fluid>
-
-        <MyNavbar />
-        <Offers/>
-
-      
-
+      <MyNavbar />
+      <Offers/>
       <SorpresaContainer />
       <WhoMakes/>
       <TellFriend/>
@@ -64,11 +61,10 @@ function App() {
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
       </div>
-      {/*<InstagramCarousel />*/}
+      {/*<StoreContextProvider>
+        <InstagramCarousel />
+      </StoreContextProvider>*/}
       <Footer/>
-      {/* <StoreContextProvider>
-      <InstagramCarousel />
-      </StoreContextProvider> */}
     </Container>
   );
 }
