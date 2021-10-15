@@ -6,8 +6,6 @@ function WyChoose(props){
         <div>
             <p className="choose">Porque Elegir <span>Nuestra Empresa de Estampado</span></p>
         </div>
-
-
     )
 }
 
