@@ -1,9 +1,19 @@
-import { useContext } from "react";
+import { setState, useContext } from "react";
 import Swal from "sweetalert2";
 import { OffersContext } from "../../Context/OffersContext.jsx";
 import Button from "../Button/Button.jsx";
 
-const AddProduct = (props) => {
+const AddProduct = () => {
+
+    const { cartItems } = useContext(OffersContext)
+
+    const plus = () => {
+      setState({
+        cartItems:cartItems + 1
+      })
+    }
+    //Esta función la llamo en el onClick y no se ejecuta.
+
 
     const confirmation = () => {
         Swal.fire({
@@ -18,17 +28,11 @@ const AddProduct = (props) => {
         })
     }
 
-        return(
-            <div>
-                <Button className="my-button" onClick={() => {
-                   
-                    confirmation(); 
-                    /*props.toggle();*/              
-                }}
-                >Agregar al Carrito</Button>
-            </div>
-        );
-
+    return(
+      <div>
+        <Button className="my-button" onClick={confirmation}>Agregar al Carrito</Button>    
+      </div>
+    );
 }
 
 export default AddProduct;

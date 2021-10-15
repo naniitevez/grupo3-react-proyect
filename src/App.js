@@ -19,15 +19,15 @@ import TellFriend from "./components/TellFriend/TellFriend";
 import StoreContextProvider from "./Context/StoreContext";
 import { OffersContextProvider } from "./Context/OffersContext.jsx";
 
-
-
 function App() {
-  
+
   return (
 
     <Container fluid>
-      <MyNavbar />
-      <Offers/>
+      <OffersContextProvider>
+        <MyNavbar/>
+        <Offers/>
+      </OffersContextProvider>
       <SorpresaContainer />
       <WhoMakes/>
       <TellFriend/>

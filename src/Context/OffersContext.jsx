@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const OffersContext = createContext()
 
 export const OffersContextProvider = ({children}) => {
-    const [counter, setCounter] = useState(0)
+    const [cartItems, setCartItems] = useState(0)
 
     return (
-        <OffersContext.Provider value={{counter, setCounter}}>
+        <OffersContext.Provider value={{cartItems, setCartItems}}>
             {children}
         </OffersContext.Provider>
     )
