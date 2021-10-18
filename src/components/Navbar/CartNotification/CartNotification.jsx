@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
-import { OffersContext } from "../../../Context/OffersContext";
+import { CartContext } from "../../../Context/CartContext";
 
 const CartNotification = () => {
 
-  const { cartItems } = useContext(OffersContext)
+  const { cartItems } = useContext(CartContext)
   
-  let numberOfNotifications = cartItems;
   return (
     <span id="cart-notification__container">
-        {numberOfNotifications}
+        {cartItems.length}
     </span>
   );
 };

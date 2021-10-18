@@ -17,17 +17,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import TellFriend from "./components/TellFriend/TellFriend";
 import StoreContextProvider from "./Context/StoreContext";
-import { OffersContextProvider } from "./Context/OffersContext.jsx";
+import { CartContextProvider } from "./Context/CartContext.jsx";
 
 function App() {
 
   return (
 
     <Container fluid>
-      <OffersContextProvider>
+      <CartContextProvider>
         <MyNavbar/>
         <Offers/>
-      </OffersContextProvider>
+      </CartContextProvider>
       <SorpresaContainer />
       <WhoMakes/>
       <TellFriend/>
