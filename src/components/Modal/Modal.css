@@ -25,10 +25,10 @@
 .modal-box {
     position: relative;
     background: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: .4rem;
     padding: 1rem;
     margin: 3rem;
-    width: 18rem;
+    width: 70vw;
     height: 15rem;
     display: flex;
     flex-direction: column;
