@@ -61,9 +61,9 @@ function App() {
           texto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi debitis pariatur ex doloremque! Aliquid aliquam eum aperiam? Illo, deserunt sit provident aliquid accusantium qui fugiat cumque magni officiis quo. "
         />
       </div>
-      {/*<StoreContextProvider>
+      <StoreContextProvider>
         <InstagramCarousel />
-      </StoreContextProvider>*/}
+      </StoreContextProvider>
       <Footer/>
     </Container>
   );

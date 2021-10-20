@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 
 import Swal from "sweetalert2";
 
-const OffersSelector = (id, data) => {
+const OffersSelector = (data) => {
 
   const {cartItems, setCartItems} = useContext(CartContext)
 
@@ -30,7 +30,7 @@ const OffersSelector = (id, data) => {
         text: "El producto se agregó al carrito con éxito!",
         icon: "success",
         confirmButtonText: "Cerrar",
-        width: "50%",
+        width: "70%",
         confirmButtonColor: "#FF8126",
         backdrop: true,
         position: "center"
@@ -42,7 +42,6 @@ const OffersSelector = (id, data) => {
       <Modal active={active} toggle={toggle}>
         <h5 className="modal-title">Confirmar<span> Compra</span></h5> 
         <p>Confirmar para que el producto se añada al carrito de compras...</p>
-        {/*Se llama esta variable sólo para control. Después se borra*/}
         <Button className="my-button" onClick={()=>{toggle(); confirmation(); handleAddToCart()}}>Agregar al Carrito</Button>
       </Modal>
     </div>
