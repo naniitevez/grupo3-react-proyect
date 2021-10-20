@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
 .modal-container {
@@ -38,8 +39,9 @@
 }
 
 .modal-box p {
-    font-weight: 500;
+    font-weight: 700;
     margin: 2rem;
+    color: rgb(104, 103, 103);
 }
 
 .modal-title {
@@ -64,6 +66,9 @@
 @media screen and (min-width: 768px) {
     :root {
         font-size: 18px;
+    }
+    .modal-box {
+        width: 40vw;
     }
 }
 
