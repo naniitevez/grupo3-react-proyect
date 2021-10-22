@@ -13,7 +13,7 @@ function Offers() {
       .then(res => {
         setOffersData(res.data)
     })
-  });
+  }, []);
 
 
   return(
